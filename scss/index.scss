@@ -1,0 +1,54 @@
+body {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+  button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: aqua;
+  }
+
+  button:hover {
+    background-color: rebeccapurple;
+  }
+
+  .span-two {
+    grid-column: span 2;
+  }
+
+  .output {
+    grid-column: 1/-1;
+    background-color: brown;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 2rem;
+
+    .previous-operand {
+      color: rgba($color: #ffffff, $alpha: 0.75);
+      font-size: 1.5rem;
+    }
+
+    .current-operand {
+      color: white;
+      font-size: 2.5rem;
+    }
+  }
+}
