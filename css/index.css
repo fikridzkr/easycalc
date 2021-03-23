@@ -1,5 +1,10 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  font-weight: normal;
+}
+
 body {
-  background-color: pink;
+  background-color: #1e2326;
   margin: 0;
   padding: 0;
   font-family: "Roboto Mono", monospace;
@@ -26,7 +31,7 @@ body {
   outline: none;
   background-color: #1e2326;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .container button:hover {
